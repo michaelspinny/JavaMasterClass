@@ -1,0 +1,13 @@
+public class Main {
+    public static void main(String[] args) {
+        char newChar = 'F';
+        switch (newChar) {
+            case 'A': case 'B': case 'C': case 'D': case 'E':
+                System.out.println("We found this letter");
+                break;
+            default:
+                System.out.println("We didn't find your letter");
+                break;
+        }
+    }
+}
