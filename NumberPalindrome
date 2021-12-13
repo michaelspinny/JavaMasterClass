@@ -1,0 +1,25 @@
+public class NumberPalindrome {
+    static public boolean isPalindrome(int originalNumber) {
+
+        if (originalNumber < 0) {
+            originalNumber = originalNumber * -1;
+        }
+        int reverse = 0;
+        int number = originalNumber;
+        int lastDigit;
+
+//        number=Math.abs(number);
+        while (number > 0) {
+            lastDigit = number % 10;
+            reverse = reverse * 10;
+            number = number / 10;
+
+            System.out.println("Last Digit = " + lastDigit);
+            reverse += lastDigit;
+            System.out.println("Reverse value is = " + reverse);
+            System.out.println(number+"rr");
+
+        }
+        return reverse == originalNumber;
+    }
+}
